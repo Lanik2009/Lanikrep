@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Posts
+{% endblock %}
+
+
+{% block body %}
+<div class="container mt-5">
+    <h1>{{article.title}}</h1>
+    <div class="alert alert-info">
+        <p>{{article.text}}</p>
+        <p><b>DATE: {{article.date.date()}}</b></p>
+        <a href="/posts/{{article.id}}/updatepost_details.html" class="btn btn-warning"> Edit</a>
+        <a href="/posts/{{article.id}}/delete" class="btn btn-warning"> Delete</a>
+    </div>
+</div>
+{% endblock %}

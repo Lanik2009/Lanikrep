@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{% endblock %}
+
+
+{% block body %}
+
+<div class="container mt-8">
+<h1>CrEaTe pOsT!!!</h1>
+
+
+<form method="post">
+    <input type="text" name="title" id="title" class="form-control" placeholder="Title">
+    <textarea name="description" id="description" class="form-control" placeholder="Description"></textarea>
+    <textarea name="text" id="text" class="form-control nt-3" placeholder="Enter text"></textarea>
+    <input type="submit" class="btn btn-success nt-5" value="Submit">
+</form>
+</div>
+
+{% endblock %}
